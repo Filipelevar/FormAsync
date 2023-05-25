@@ -25,13 +25,14 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="CPF" id="CPF" class="inputUser" required maxlength="11">
+                    <input type="text" name="CPF" id="CPF" class="inputUser" required minlength="11" maxlength="11">
                     <label for="CPF" class="labelInput">CPF </label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="number" name="CEP" id="CEP" class="inputUser" required>
+                    <input type="text" name="CEP" id="CEP" class="inputUser" required minlength="8" maxlength="8" onblur="handleCepFocusOut()">
                     <label for="CEP" class="labelInput">CEP</label>
+                    <label class="teste123">Erro ao consultar CEP! Valor inválido, por favor, digite um cep com oito digitos e que EXISTA! ANimal</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
@@ -50,42 +51,12 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <select class="selectUF">
-                        <option value="">Selecione</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espirito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                    <input type="text" name="UF" id="UF" class="inputUser" required>
+                    <input type="text" name="UF" id="uf" class="inputUser" required>
                     <label for="UF" class="labelInput">UF</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <input type="text" name="telefone" id="telefone" class="inputUser" required maxlength="11">
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <br><br>

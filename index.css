@@ -131,7 +131,7 @@ legend{
     border: 4px solid #f3f3f3;
     border-top: 4px solid #3498db;
     border-radius: 50%;
-    animation: spin 4s infinite linear;
+    animation: spin 1s infinite linear;
   }
   
   @keyframes spin {
@@ -142,3 +142,25 @@ legend{
       transform: rotate(360deg);
     }
   }
+ 
+.teste123 {
+  pointer-events: none;
+}
+
+.teste123 .teste123{
+display :block
+  }
+
+.teste123 .teste123.hide {
+  display:none
+}
+
+.teste123 {
+display: none;
+position: fixed;
+top: 0;
+right: 0;
+padding: 10px;
+background-color: rgba(255, 0, 0, 0.8); /* Semi-transparent background */
+z-index: 9999;
+}
